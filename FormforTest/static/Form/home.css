@@ -15,19 +15,21 @@ form {
 }
 
 input {
-  display: flex;
-  align-content: flex-end;
   height: 40px;
   outline: 0;
   border-width: 0 0 2px;
   border-color: black;
 }
-
-.submit-button {
-  margin: auto;
-  box-sizing: border-box;
+#submit-button {
+  justify-self: start;
+  align-self: center;
+}
+#cancel-button {
+  justify-self: end;
+  align-self: center;
+}
+button {
   display: table-cell;
-  vertical-align: middle;
   position: relative;
   border-radius: 25px;
   color: white;
