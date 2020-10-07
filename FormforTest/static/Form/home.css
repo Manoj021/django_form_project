@@ -29,10 +29,63 @@ input {
   align-self: center;
 }
 button {
+  outline: 0;
+  border: 0;
   display: table-cell;
   position: relative;
   border-radius: 25px;
   color: white;
-  width: 70px;
+  width: 100px;
   height: 40px;
+}
+
+.demoSpan1 {
+  overflow: hidden;
+  width: 25px;
+}
+
+.demoSpan1:before {
+  content: "";
+  height: 7px;
+  width: 7px;
+  display: block;
+  border: 3px solid white;
+  border-left-width: 0;
+  border-top-width: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  position: absolute;
+  top: 14px;
+  right: 13px;
+}
+
+.demoSpan2:before,
+.demoSpan2:after {
+  content: "";
+  height: 3px;
+  width: 15px;
+  display: block;
+  background: white;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.demoSpan2:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
