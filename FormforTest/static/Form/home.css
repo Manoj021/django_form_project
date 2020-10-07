@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 75px 75px 75px;
+  justify-items: stretch;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-gap: 10px;
+  row-gap: 5px;
+}
+
+input {
+  display: flex;
+  align-content: flex-end;
+  height: 40px;
+}
+
+.submit-button {
+  margin: auto;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 25px;
+  color: white;
+  width: 70px;
+  height: 40px;
+}

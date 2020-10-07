@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'Form/home.css' %}"
+    />
+  </head>
+  <body>
+    <form method="POST" class="grid-container">
+      {%csrf_token%}
+      <input type="text" id="fName" name="fname" placeholder="First Name" />
+      <input type="text" id="lName" name="lname" placeholder="Last Name" />
+      <input type="text" id="email" name="email" placeholder="Email" />
+      <input type="text" id="degree" name="degree" placeholder="Degree" />
+      <input
+        type="text"
+        id="education"
+        name="education"
+        placeholder="Education"
+      />
+      <input type="text" id="address" name="address" placeholder="Address" />
+      <button class="submit-button" style="background-color: #800000">
+        Cancel
+      </button>
+      <button
+        class="submit-button"
+        style="background-color: green"
+        formaction=""
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
