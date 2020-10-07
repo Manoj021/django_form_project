@@ -18,6 +18,9 @@ input {
   display: flex;
   align-content: flex-end;
   height: 40px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
 }
 
 .submit-button {
